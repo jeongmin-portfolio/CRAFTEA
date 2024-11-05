@@ -1,0 +1,256 @@
+@charset "utf-8";
+
+/* 배너 */
+#banner {
+    height: 870px;
+    background-color: #EFEFB1;
+    overflow: hidden;
+}
+
+.banner {
+    width: 100%;
+}
+
+.banner_in {
+    width: 1320px;
+    margin: auto;
+    position: relative;
+}
+
+.banner_text {
+    position: absolute;
+    top: 220px;
+    left: 0;
+}
+
+.banner_text h4 {
+    text-decoration: underline;
+}
+
+.banner_text h3 {
+    margin: 30px 0;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.banner_text p {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.banner_text a:hover {
+    background-color: #4F5845;
+    color: #fff;
+}
+
+.banner_in .bg_can {
+    position: absolute;
+    right: -150px;
+    top: 150px;
+}
+
+.banner_in .can {
+    position: absolute;
+    right: -150px;
+    top: 130px;
+}
+
+/* //배너 */
+
+.wave_line_wrapper {
+    background-color: #EFEFB1;
+}
+
+.wave_line {
+    width: 100%;
+    display: block;
+}
+
+
+/* 탭 메뉴 */
+/* 탭메뉴 꾸미기 */
+.tab {
+    width: 1320px;
+    margin: 100px auto;
+    overflow: hidden;
+}
+
+.tabnav {
+    width: 100%;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.tabnav li a {
+    display: block;
+    position: relative;
+    z-index: 2;
+    margin: 30px 30px;
+}
+
+.tabnav li a .tab_btn_circle {
+    width: 118px;
+    height: 118px;
+    border: 3px solid #F2A824;
+    border-radius: 50%;
+    position: relative;
+    line-height: 105px;
+    z-index: 1;
+    transition: 0.7s;
+}
+
+.tabnav li a .tab_btn_circle svg {
+    vertical-align: middle;
+}
+
+.tabnav li a .tab_btn_circle .btn_all {
+    padding-top: 5px;
+}
+
+.tabnav li a:hover svg rect,
+.tabnav li a:hover svg path {
+    fill: #fff;
+}
+
+.tabnav li a svg rect,
+.tabnav li a svg path {
+    transition: 0.5s;
+}
+
+.tabnav li a:hover .tab_btn_circle {
+    background-color: #F2A824;
+}
+
+.tabnav li a:hover {
+    color: #F2A824;
+}
+
+
+/* 탭컨텐츠 꾸미기 */
+.tabcontent {
+    padding: 20px;
+    height: auto;
+    position: relative;
+    top: -1px;
+}
+
+.tabcontent .title {
+    width: 100%;
+    border-bottom: 2px solid #F2A824;
+    padding: 0 0 15px 30px;
+    margin: 40px 0 80PX;
+    position: relative;
+}
+
+.tabcontent select {
+    position: absolute;
+    right: 20px;
+    top: 0px;
+    border: 2px solid #F2A824;
+    border-radius: 15px;
+    font-size: 15px;
+    color: #4F5845;
+    padding: 10px 20px 10px 10px;
+    background: url('../images/select_down.png') calc(100% - 5px) center no-repeat;
+    -o-appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.tabcontent select:focus {
+    outline: none
+}
+
+
+.tabcontent h3 {
+    color: #F2A824;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+.tabcontent ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 50px 0;
+}
+
+.tabcontent li {
+    width: 405px;
+    height: 620px;
+    text-align: center;
+    position: relative;
+}
+
+.tabcontent li.last {
+    opacity: 0;
+}
+
+.tabcontent li h5 {
+    font-size: 20px;
+}
+
+.tabcontent li>h5 {
+    margin: 10px 0;
+}
+
+.tabcontent li>h5 .cancel {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 16px;
+}
+
+.tabcontent li a .product_box {
+    width: 405px;
+    height: 420px;
+    background-color: #FFFFE2;
+    border-radius: 50px;
+    line-height: 420px;
+    transition: 0.5s;
+}
+
+.tabcontent li a .product_box img {
+    vertical-align: middle;
+    transform-origin: center bottom;
+}
+
+.tabcontent li a h5 {
+    margin-top: 20px;
+}
+
+.tabcontent li a:hover .product_box {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px #4f584581;
+}
+
+.tabcontent li a:hover img {
+    filter: drop-shadow(0 0 10px #53584557) saturate(120%);
+    animation: rotate 2s 2 linear;
+}
+
+@keyframes rotate{
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(3deg);
+    }
+    75%{
+        transform: rotate(-3deg);
+    }
+}
+
+
+.best {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+}
+
+/* //탭 메뉴 */

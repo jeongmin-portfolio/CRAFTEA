@@ -1,0 +1,402 @@
+@charset "utf-8";
+
+/* 배너 */
+#banner {
+    height: 870px;
+    background-color: #FFE9BB;
+    overflow: hidden;
+}
+
+.banner {
+    width: 100%;
+}
+
+.banner_in {
+    width: 1320px;
+    margin: auto;
+    position: relative;
+}
+
+.banner_text {
+    position: absolute;
+    top: 250px;
+    left: 0;
+}
+.banner_text h3{
+    font-weight: 800;
+    margin: 30px 0;
+}
+.banner_text p {
+    font-size: 25px;
+    /* margin: 30px 0 50px; */
+}
+
+.banner_text a {
+    border-radius: 50px;
+    padding: 10px 25px;
+    display: inline-block;
+    background-color: #F2A824;
+    color: #fff;
+}
+
+.banner_text a:hover {
+
+}
+
+.banner_in .bg_delivery {
+    position: absolute;
+    right: 0px;
+    top: 100px;
+}
+
+.banner_in .cloud {
+    position: absolute;
+    right: 0px;
+    top: 150px;
+}
+
+.banner_in .truck {
+    position: absolute;
+    right: 0px;
+    top: 300px;
+}
+
+.banner_in .box {
+    position: absolute;
+    right: -150px;
+    top: 430px;
+}
+
+/* //배너 */
+
+.wave_line_wrapper {
+    background-color: #FFE9BB;
+}
+
+.wave_line {
+    width: 100%;
+    display: block;
+}
+
+
+/* 정기배송 혜택 */
+#benefit {
+    width: 1320px;
+    margin: 150px auto;
+    text-align: center;
+}
+
+#benefit>h2 {
+    margin-bottom: 10px;
+}
+
+#benefit>p {
+    margin-bottom: 50px;
+}
+
+#benefit ul {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#benefit li {
+    width: 400px;
+    height: 395px;
+    background-color: #FFF1D8;
+    border-radius: 30px;
+    padding: 40px 0;
+}
+
+#benefit li img {
+    margin: 20px 0;
+}
+
+#benefit li h5 {
+    display: inline-block;
+    font-size: 15px;
+    color: #EE8529;
+    border: 1px solid #EE8529;
+    border-radius: 50px;
+    padding: 5px 10px;
+}
+
+#benefit li p {
+    margin: 0;
+}
+
+#benefit li h3 {
+    color: #EE8529;
+    font-weight: 800;
+    margin: 0px;
+}
+/* //정기배송 혜택 */
+
+
+/* 정기배송 신청방법 */
+#how {
+    text-align: center;
+    background: url(../images/delivery/bg_how.png) no-repeat top center/cover;
+    height: 900px;
+    padding: 100px 0;
+}
+
+.how_title {
+    width: 940px;
+    height: 48px;
+    margin: 50px auto;
+    position: relative;
+}
+
+.flower_left {
+    position: absolute;
+    top: -50px;
+    left: 0;
+}
+
+.flower_right {
+    position: absolute;
+    top: -50px;
+    right: 0;
+}
+
+#how ul {
+    text-align: left;
+    width: 718px;
+    background: #fff;
+    border-radius: 30px;
+    margin: auto;
+    padding: 40px 60px;
+    position: relative;
+}
+
+
+#how ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#how ul li:nth-child(2) {
+    margin: 70px 0;
+}
+
+#how ul p {
+    margin: 0;
+}
+
+.line1 {
+    height: 40px;
+    width: 4px;
+    display: block;
+    background-color: #EE8529;
+    position: absolute;
+    left: 110px;
+    top: 157px;
+}
+
+.line2 {
+    height: 40px;
+    width: 4px;
+    display: block;
+    background-color: #EE8529;
+    position: absolute;
+    left: 110px;
+    top: 328px;
+}
+/* //정기배송 신청방법 */
+
+
+.circle {
+    width: 100%;
+    background-color: #FFF1D8;
+    display: block;
+}
+
+
+/* 정기배송 Q&A */
+#q_a{
+    margin: 50px auto;
+}
+#q_a h2 {
+    text-align: center;
+}
+
+#accordion_wrap {
+    width: 880px;
+    border: 2px solid #F2A824;
+    margin: 30px auto;
+    box-sizing: border-box;
+    padding: 10px 30px;
+    border-radius: 30px;
+}
+
+.que {
+    width: 800px;
+    margin: auto;
+    position: relative;
+    padding: 20px 30px;
+    cursor: pointer;
+    border-top: 2px solid #F2A824;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    background: url(../images/delivery/arrow_down.png) no-repeat 95% 50%;
+}
+.que.on {
+    background: url(../images/delivery/arrow_up.png) no-repeat 95% 50%;
+}
+.que:hover{
+    color: #EE8529;
+}
+.que:first-child{
+    border-top: none
+  }
+
+.anw_wrap{
+    display: none;
+}
+.anw{
+    overflow: hidden;
+    font-size: 17px;
+    background-color: #FFF1D8;
+    border-radius: 30px;
+    padding: 20px 30px;
+    margin: 0 auto 30px;
+    width: 800px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+}
+
+.q_circle{
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background: url(../images/delivery/q_wrap.png) no-repeat;
+}
+.que.on .q_circle{
+    background: url(../images/delivery/q_wrap_on.png) no-repeat;
+
+}
+.a_circle{
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background: url(../images/delivery/a_wrap.png) no-repeat;
+}
+/* //정기배송 Q&A */
+
+/* 정기배송 신청 */
+#apply{
+    margin: 200px auto 150px;
+}
+#apply h2{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.from_wrap{
+    margin: auto;
+    width: 1200px;
+    height: 507px;
+    background: url(../images/delivery/bg_delivery_driver.png) no-repeat 30px 28px #FFFFE2;
+    border-radius: 20px;
+    padding: 0px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+form{
+    margin-left: auto;
+    width: 600px;
+}
+table{
+    font-size: 18px;
+    margin-left: auto;
+}
+th,
+td {
+    padding: 5px 0;
+    text-align: left;
+}
+th{
+    padding-right: 20px;
+}
+table input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    color: #4F5845;
+    font-family: 'Pretendard';
+}
+table select {
+    padding: 10px 50px 10px 10px;
+    border: 1px solid #ccc;
+    -webkit-appearance: none;
+    /* 크롬 화살표 없애기 */
+    -moz-appearance: none;
+    /* 파이어폭스 화살표 없애기 */
+    appearance: none;
+    /* 화살표 없애기 */
+    background: url(./images/select.png) no-repeat 90% center #fff;
+    border-radius: 10px;
+    font-family: 'Pretendard';
+    color: #4F5845;
+}
+table input[type="tel"]{
+    width: 80px;
+}
+table input#address{
+    width: 411px;
+}
+textarea{
+    width: 411px;
+    height: 80px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Pretendard';
+    color: #4F5845;
+}
+.right{
+    text-align: right;
+    margin-top: 20px;
+}
+.right input{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+.right input:first-child{
+    margin-right: 10px;
+}
+input[type="submit"]{
+    background-color: #F2A824;
+    cursor: pointer;
+}
+input[type="reset"]{
+    background-color: #999;
+    cursor: pointer;
+    
+}
+table input:focus,
+table textarea:focus,
+table select:focus {
+    outline-color: #F2A824;
+}
+
+input[type="submit"]:hover{
+    opacity: 0.7;
+}
+input[type="reset"]:hover{
+    opacity: 0.7;
+}
+
+
+/* //정기배송 신청 */

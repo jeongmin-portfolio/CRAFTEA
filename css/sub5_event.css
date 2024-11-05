@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+/* Event 배너 */
+#event_banner {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+#event_banner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#event_banner .event_banner_static {
+    position: static;
+    width: 100%;
+}
+
+.event_banner_text {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    margin-left: -218.5px;
+    text-align: center;
+}
+
+
+.event_banner_text h3 {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.event_banner_text p {
+    font-size: 25px;
+}
+/* //Event 배너 */
+
+/* Event 내용 */
+#event ul{
+    text-align: left;
+    width: 1320px;
+    margin: 85px auto 130px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 110px 0;
+}
+#event ul li{
+    width: 600px;
+    position: relative;
+}
+#event ul li h5{
+    margin-top: 10px;
+}
+#event ul li p{
+    color: #999;
+}
+
+#event ul a:before{
+    content: '';
+    width: 600px;
+    height: 400px;
+    border-radius: 20px;
+    background-color: #00000025;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+    transition: 0.35s;
+}
+#event ul li:hover a:before{
+    opacity: 1;
+}
+#event ul li img{
+    transition: 0.5s;
+}
+/* //Event 내용 */
+

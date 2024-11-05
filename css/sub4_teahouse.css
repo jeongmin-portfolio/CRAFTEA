@@ -1,0 +1,285 @@
+@charset "utf-8";
+
+/* Tea house 배너 */
+#teahouse_banner {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+
+#teahouse_banner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#teahouse_banner .teahouse_banner_static {
+    position: static;
+    width: 100%;
+}
+
+.teahouse_banner_text {
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    margin-left: -125.5px;
+    text-align: center;
+}
+
+.teahouse_banner_text h3 {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.teahouse_banner_text p {
+    font-size: 25px;
+}
+
+.flicker {
+    animation: flash 5s;
+}
+
+@keyframes flash {
+
+    0%,
+    20%,
+    40%,
+    to {
+        opacity: 1;
+    }
+
+    10%,
+    30% {
+        opacity: 0;
+    }
+}
+/* //Tea house 배너 */
+
+
+.wave_line {
+    width: 100%;
+    display: block;
+}
+
+
+/* 티하우스 소개 */
+#teahouse_info {
+    padding: 20px 0 120px;
+}
+
+.teahouse_info_in {
+    margin: auto;
+    width: 1165px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.teahouse_info_text h3 {
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.teahouse_info_text p:nth-of-type(1) {
+    margin-bottom: 20px;
+}
+/* //티하우스 소개 */
+
+
+.circle {
+    width: 100%;
+    display: block;
+}
+
+
+/* 원데이 클래스 */
+#oneday_class{
+    background-color: #FFFFE2;
+    padding: 50px 0 150px;
+}   
+/* 원데이 클래스 소개 */
+#class_info {
+    width: 1320px;
+    text-align: center;
+    margin: 0 auto 150px;
+}
+#class_info span {
+    font-size: 17px;
+}
+/* Swiper */
+.swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+.mySwiper2 {
+    width: 811px;
+    border-radius: 20px;
+    height: 450px;
+}
+.mySwiper {
+    box-sizing: border-box;
+    padding: 10px 0;
+    width: 811px;
+}
+.mySwiper .swiper-slide {
+    width: 263px;
+    opacity: 0.4;
+    cursor: pointer;
+}
+.mySwiper .swiper-slide-thumb-active {
+    opacity: 1;
+}
+/* 이동버튼 이미지로 바꾸기 */
+.class_slide{
+    position: relative;
+}
+.swiper-button-prev,
+.swiper-button-next {
+    width: 34px;
+    height: 58px;
+    position: absolute;
+    top: 250px;
+}
+.swiper-button-prev {
+    left: 200px;
+}
+.swiper-button-next {
+    right: 200px;
+}
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    content: '';
+    display: block;
+    width: 34px;
+    height: 58px;
+}
+.swiper-button-prev {
+    background: url(../images/slide_prev2.png);
+}
+.swiper-button-next {
+    background: url(../images/slide_next2.png);
+}
+.swiper-button-prev:hover {
+    background: url(../images/slide_prev2_hover.png);
+}
+.swiper-button-next:hover {
+    background: url(../images/slide_next2_hover.png);
+}
+/* //Swiper */
+/* //원데이 클래스 소개 */
+
+/* 원데이 클래스 커리큘럼 */
+/* 탭메뉴 꾸미기 */
+.tab {
+    width: 990px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+}
+
+.tabnav_wrap{
+    width: 100%;
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.tabnav_wrap h2{
+    width: 100%;
+    margin-top: 10px;
+}
+.tabnav{
+    display: flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    gap: 10px;
+}
+.tabnav li a {
+    display: block;
+    width: 42px;
+    height: 42px;
+    border: 1px solid #F2A824;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    line-height: 42px;
+    color: #F2A824;
+    background-color: #fff;
+}
+
+.tabnav li a:hover {
+    background: #F2A824;
+    color: #fff;
+    font-weight: 800;
+}
+/* 탭메뉴 클릭했을 때 변화 꾸미기 */
+.tabnav li a.active {
+    background-color: #F2A824;
+    color: #fff;
+    font-weight: 800;
+}
+/* 탭컨테츠 꾸미기 */
+.tabcontent>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: auto;
+    position: relative;
+    top: -1px;
+}
+.tab_text p{
+    margin: 20px 0 10px;
+}
+/* //원데이 클래스 커리큘럼 */
+/* //원데이 클래스 */
+
+
+.circle_white{
+    background-color: #FFFFE2;
+}
+
+
+/* 오시는 길 */
+#location{
+    width: 990px;
+    margin: 50px auto 100px;
+}
+#location h2{
+    text-align: center;
+}
+#location iframe{
+    width: 990px;
+    height: 445px;
+    border: none;
+    border-radius: 30px;
+    margin: 20px 0 10px;
+}
+table{
+    border-collapse: collapse;
+    width: 990px;
+    font-size: 18px;
+}
+table th,
+table td{
+    vertical-align: top;
+    padding: 15px 0;
+}
+table th{
+    width: 100px;
+    text-align: left;
+}
+table td{
+    width: 395px;
+}
+/* //오시는 길 */

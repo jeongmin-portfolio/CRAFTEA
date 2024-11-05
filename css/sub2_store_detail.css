@@ -1,0 +1,243 @@
+@charset "utf-8";
+
+/* 판매 */
+#product{
+    background-color: #FFFFE2;
+    height: 870px;
+    padding-top: 60px;
+}
+.product_wrap {
+    width: 1230px;
+    margin: auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+/* 상품 이미지 */
+.product_pictures{
+    width: 575px;
+    box-sizing: border-box;
+}
+.product_pictures img{
+    filter: saturate(120%);
+    display: block;
+}
+.product_pictures>img{
+    width: 575px;
+}
+.product_pictures ul{
+    display: flex;
+    gap: 14px;
+    margin-top: 20px;
+}
+.product_pictures li{
+    overflow: hidden;
+    width: 133px;
+}
+
+.product_pictures li img{
+    width: 133px;
+    cursor: pointer;
+}
+.product_pictures li.active{
+    border: 2px solid #F2A824;
+    border-radius: 10px;
+}
+.product_pictures li:hover img{
+    opacity: 0.8;
+}
+/* //상품 이미지 */
+/* 상품 텍스트 */
+.product_wrap .text_box{
+    width: 575px;
+    font-size: 18px;
+}
+.product_wrap .text_box h3{
+    font-weight: 600;
+}
+.text_box h3:nth-of-type(2){
+    border-bottom: 1px solid #F2A824;
+    padding: 10px 0;
+}
+.text_box p{
+    margin: 20px 0 30px;
+}
+.text_box p:nth-of-type(3){
+    line-height: 1.2;
+}
+.quantity_wrap{
+    background-color: #FFE9BB;
+    border-radius: 20px;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+}
+.quantity{
+    border: 1px solid #4f584559;
+    position: relative;
+    width: 300px;
+    height: 50px;
+}
+.quantity input{
+    text-align: center;
+    font-size: 18px;
+    color: #4F5845;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-left: 1px solid #4f584559;
+    border-right: 1px solid #4f584559;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.quantity input:focus{
+    outline: none;
+}
+.quantity span{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    text-align: center;
+    color: #4f58459d;
+    font-size: 18px;
+    line-height: 48px;
+    cursor: pointer;
+}
+.quantity .plus{
+    right: 0;
+}
+.quantity .minus{
+    left: 0;
+}
+
+.total_price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.btn_wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.btn_wrap a{
+    display: inline-block;
+    padding: 15px 50px;
+    border: 1px solid #4F5845;
+    color: #4F5845;
+    border-radius: 15px;
+    font-weight: 700;
+    font-size: 18px;
+}
+.btn_wrap .buy{
+    padding: 15px 80px;
+    background-color: #F2A824;
+    border: 1px solid #F2A824;
+    color: #fff;
+}
+.btn_wrap .present:hover,
+.btn_wrap .cart:hover{
+    color: #F2A824;
+    border: 1px solid #F2A824;
+    opacity: 0.8;
+}
+.btn_wrap .buy:hover{
+    color: #F2A824;
+    background-color: #fff;
+    border: 1px solid #F2A824;
+
+}
+/* //상품 텍스트 */
+/* //판매 */
+
+.wave_line_wrapper {
+    background-color: #FFFFE2;
+}
+
+.wave_line {
+    width: 100%;
+    display: block;
+}
+
+/* 상세정보 */
+/* 탭메뉴 꾸미기 */
+.tab {
+    overflow: hidden;
+}
+
+.tabnav {
+    width: 100%;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+}
+
+.tabnav li a {
+    display: block;
+}
+/* //탭메뉴 꾸미기 */
+.detail {
+    width: 1320px;
+    margin: 50px auto 100px;
+}
+
+.detail_nav {
+    width: 100%;
+    justify-content: center;
+}
+
+.detail_nav li {
+    flex: 1;
+    text-align: center;
+}
+
+.detail_nav li a {
+    padding: 10px 0;
+    position: relative;
+    z-index: 2;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.detail_nav li a.active {
+    border-bottom: 1px solid #F2A824;
+    color: #F2A824;
+}
+
+.detail_content {
+    border-top: 1px solid #4F5845;
+    position: relative;
+    top: -1px;
+    padding-top: 100px;
+}
+.detail_content #tab05{
+    text-align: center;
+}
+.detail_content #tab06{
+}
+#tab06 table{
+    font-size: 16px;
+    border-collapse: collapse;
+    border-top: 1px solid #4f58459d;
+    width: 1000px;
+    margin: auto;
+}
+#tab06 table th,
+#tab06 table td{
+    border-bottom: 1px solid #4f58459d;
+    padding: 20px;
+}
+#tab06 table th{
+    width: 200px;
+    background-color: #f2a62433;
+}
+/* //상세정보 */

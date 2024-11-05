@@ -1,0 +1,546 @@
+@charset "utf-8";
+
+h2 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+/* About us 배너*/
+#about_banner {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+
+#about_banner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#about_banner .about_banner_static {
+    position: static;
+    width: 100%;
+}
+
+.about_banner_text {
+    position: absolute;
+    top: 20%;
+    left: 16%;
+}
+
+.about_banner_text h1 {
+    margin-bottom: 20px;
+}
+
+@keyframes cloud1 {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(1000px);
+    }
+}
+
+@keyframes cloud2 {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-800px);
+    }
+}
+
+@keyframes cloud3 {
+    0% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(100px);
+    }
+
+    100% {
+        transform: translateX(-500px);
+    }
+}
+
+.cloud1 {
+    animation: cloud1 20s linear infinite alternate;
+}
+
+.cloud2 {
+    animation: cloud2 18s linear infinite alternate;
+}
+
+.cloud3 {
+    animation: cloud3 20s linear infinite alternate;
+}
+
+/* //About us 배너 */
+
+/* Brand Story*/
+#brand_story {
+    text-align: center;
+    position: relative;
+    padding: 100px 0 20px 0;
+    overflow: hidden;
+}
+
+.bs_berry1 {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    margin-left: -1000px;
+}
+
+.bs_berry2 {
+    position: absolute;
+    top: 0px;
+    right: -30px;
+    right: 50%;
+    margin-right: -1000px;
+}
+
+#brand_story h2 {
+    margin: 60px;
+    font-size: 40px;
+}
+
+#brand_story p {
+    font-size: 30px;
+    margin: 60px;
+}
+
+/* 형관펜 효과*/
+.highlight {
+    color: white;
+    background: linear-gradient(to right, #F2A824 50%, transparent 50%) 100% 0;
+    background-size: 200%;
+    transition: all 3s 1s;
+}
+.hl2{
+    transition: all 3s 2s;
+}
+
+.on {
+    background-position-x: 0;
+}
+
+.on2 {
+    background-position-x: 0;
+    color: #fff;
+}
+
+/* //형관펜 효과*/
+/* //Brand Story*/
+
+
+/* Special Point */
+#special_point {
+    background: url(../images/about_us/bg_special_point.png) no-repeat center top/cover;
+    margin-top: 100px;
+    padding: 150px 0;
+    text-align: center;
+}
+
+#special_point h3 {
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+#special_point p {
+    font-size: 25px;
+}
+
+/* 슬라이드 CSS */
+.slider {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    padding-top: 20px;
+}
+
+.slider .inner {
+    width: 70%;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.slide_list>li {
+    margin: auto;
+    position: relative;
+    height: 800px;
+    width: 30%;
+    margin: 0;
+    text-align: center;
+    z-index: 0;
+    transition: all 0.5s;
+}
+
+.slide_text {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+}
+
+/* 영역별 크기 설정 */
+.slide_list>li {
+    opacity: 0;
+}
+
+.slide_list>li.swiper-slide-next,
+.slide_list>li.swiper-slide-prev {
+    z-index: 50;
+    transform: scale(0.8);
+    opacity: 0.5;
+}
+
+.slide_list>li.swiper-slide-next img {
+    right: 0;
+}
+
+.slide_list>li.swiper-slide-next .slide_text,
+.slide_list>li.swiper-slide-prev .slide_text {
+    display: none;
+}
+
+.slide_list>li.swiper-slide-active {
+    z-index: 100;
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* 슬라이드 화살표 */
+.slider .btn {
+    display: inline-block;
+    width: 34px;
+    height: 58px;
+    background: url('../images/slide_next.png') no-repeat center center;
+    text-indent: -999em;
+    cursor: pointer;
+    position: absolute;
+    top: 300px;
+    z-index: 100;
+}
+
+.slider .btn:hover {
+    background: url(../images/slide_next_hover.png) no-repeat center center;
+}
+
+.slider .btn.btn_prev {
+    transform: rotateY(180deg);
+    left: 10%;
+}
+
+.slider .btn.btn_next {
+    right: 10%;
+}
+
+/* 샤이닝 이펙트 */
+.slide_list>li .image-wrapper {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 552px;
+    height: 552px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.slide_list>li.swiper-slide-active .image-wrapper {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.426);
+}
+
+.shine {
+    position: relative;
+    overflow: hidden;
+}
+
+.shine::before {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+    content: "";
+    display: block;
+    height: 100%;
+    left: -75%;
+    position: absolute;
+    top: 0;
+    transform: skewX(-25deg);
+    width: 50%;
+    z-index: 2;
+}
+
+.shine:hover::before,
+.shine:focus::before {
+    animation: shine 1s;
+}
+
+.slide_list>li.swiper-slide-active .shine:hover h3 {
+    color: #F2A824;
+}
+
+@keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+
+.slide_list>li.swiper-slide-active img {
+    transition: 0.2s;
+}
+
+/* //샤이닝 이펙트 */
+/* //슬라이드 CSS */
+/* //Special Point */
+
+.circle{
+    width: 100%;
+    background-color: #FFF1D8;
+    display: block;
+}
+
+
+/* Our Philosophy - 카드 스크롤 */
+.main-content-1 {
+    width: 100%;
+    height: 4000px;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    height: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.sticky-background {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+}
+.sticky-background h2{
+    margin-top: 50px;
+}
+.sticky-background .scroll_down{
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    bottom: 10px;
+    animation: bounce 0.5s ease-out alternate-reverse infinite;
+}
+@keyframes bounce {
+    100% { transform: translateY(-30%); }
+  }
+.card-frame {
+    position: absolute;
+    top: 250px;
+    width: 1200px;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+}
+
+.card {
+    width: 30%;
+    height: 100%;
+    flex-shrink: 0;
+    transform-style: preserve-3d;
+    position: relative;
+    transform: perspective(100vw) translateX(100vw) rotateY(180deg);
+    transition: transform 0.1s;
+    text-align: center;
+}
+
+.front,
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    backface-visibility: hidden;
+    border: 3px solid #F2A824;
+    border-radius: 50px;
+    padding: 0 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.front {
+    background-color: #F2A824;
+    gap: 10px;
+}
+
+.front p {
+    margin-bottom: 0;
+    color: #fff;
+    line-height: 1.8;
+}
+
+.back {
+    align-items: center;
+    transform: rotateY(180deg);
+    background-color: #fff;
+    font-size: 30px;
+}
+
+.back img {
+    width: 180px;
+}
+
+.back h4 {
+    margin-top: 40px;
+    font-weight: 800;
+    color: #F2A824;
+}
+/* //Our Philosophy - 카드 스크롤 */
+
+/* Social Impact */
+#social_impact {
+    background: url(../images/about_us/bg_social_impact.png) no-repeat top center/cover;
+    padding: 150px 0 100px;
+    text-align: center;
+}
+
+#social_impact h2 {
+    text-align: center;
+}
+
+#social_impact ul {
+    width: 1320px;
+    margin: 100px auto;
+    text-align: left;
+}
+
+#social_impact ul li {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#social_impact ul li:first-child {
+    height: 550px;
+    margin-bottom: 150px;
+}
+
+#social_impact ul li:last-child {
+    height: 445px;
+}
+
+#social_impact h3 {
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #F2A824;
+}
+
+#social_impact ul p {
+    line-height: 1.8;
+    font-size: 25px;
+}
+
+.si_text1 {
+    width: 500px;
+    margin-left: auto;
+}
+
+.si_text2 {
+    width: 400px;
+}
+
+.si_img {
+    transition: 1s;
+}
+
+.si_img1 {
+    width: 660px;
+    height: 550px;
+    border-radius: 62% 38% 65% 35% / 50% 66% 34% 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 70px;
+
+}
+
+.si_bg1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(242, 166, 36, 0.267);
+}
+
+.si_img2 {
+    width: 625px;
+    height: 445px;
+    border-radius: 53% 47% 63% 37% / 48% 58% 42% 52%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0px;
+}
+
+.si_bg2 {
+    position: absolute;
+    top: 0;
+
+    right: 80px;
+    background-color: rgba(242, 166, 36, 0.267);
+}
+
+.si_img_box:hover .si_img {
+    transform: scale(1.15);
+}
+
+.leaf {
+    position: absolute;
+}
+
+.leaf1 {
+    top: 0;
+    left: 40px;
+}
+
+.leaf2 {
+    bottom: 30px;
+    left: 630px;
+
+}
+
+.leaf3 {
+    top: 0;
+    right: 550px;
+}
+
+.leaf4 {
+    bottom: 0;
+    right: 10px;
+}
+/* //Social Impact */
+
+/* Footer */
+footer.sub_footer {
+    background-color: #FFF1D8;
+}
+
+/* //Footer */
